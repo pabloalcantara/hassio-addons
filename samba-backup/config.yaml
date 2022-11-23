@@ -3,7 +3,7 @@ name: Samba Backup - Pablo teste
 version: 5.2.0
 slug: samba_backup
 description: Create backups and store them on a Samba share
-url: https://github.com/pabloalcantara/hassio-addons-1/tree/master/samba-backup
+url: https://github.com/pabloalcantara/hassio-addons/tree/master/samba-backup
 arch:
   - armhf
   - armv7
