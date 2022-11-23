@@ -7,8 +7,6 @@ echo "[Info] Start rsync-backups"
 CONFIG_PATH=/data/options.json
 username=$(jq --raw-output ".username" $CONFIG_PATH)
 password=$(jq --raw-output ".password" $CONFIG_PATH)
-sed -i 's/old-text/new-text/g' input.txt
-echo "$username:$password" > /etc/rsyncd.secrets
 chmod 600 /etc/rsyncd.secrets
 sed -i 's/auth users = %username%/auth users = $username/g' /data/options.json
 cat /data/options.json
