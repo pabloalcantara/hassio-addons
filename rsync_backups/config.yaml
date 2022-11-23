@@ -24,7 +24,7 @@ map:
 options: 
   username: admin
   password: admin
-  hosts_allow: *
+  hosts_allow: "*"
 
 ports:
   14678/tcp: 14678 
