@@ -15,15 +15,11 @@
   ],
   "map": ["backup:rw"],
   "options": {
-    #"directory": "~/hassio-backups",
     "username": "user",
-    "password": "password",
-    #"auto_purge": 0
+    "password": "password"
   },
   "schema": {
-    #"directory": "str",
     "username": "str",
-    "password": "str",
-    #"auto_purge": "int"
+    "password": "str"
   }
 }
