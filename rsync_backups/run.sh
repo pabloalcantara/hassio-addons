@@ -11,7 +11,7 @@ port=$(jq --raw-output ".port" $CONFIG_PATH)
 echo "[Info] Start rsync-backups"
 
 echo "[Info] Start rsync backups to $rsyncurl"
-echo "$username:$password > /etc/rsyncd.secrets
+echo "$username:$password" > /etc/rsyncd.secrets
 
 echo "[Info] rsync-backups Iniciado"
 #rsync --daemon --no-detach --config=/etc/rsyncd.conf
