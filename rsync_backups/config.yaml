@@ -7,7 +7,9 @@ url: https://github.com/pabloalcantara/hassio-addons/rsync_backups
 startup: once
 boot: manual
 init: false
-startup: application
+startup: services
+privileged:
+- SYS_ADMIN
 
 arch:
 - aarch64
