@@ -4,7 +4,7 @@
 
 ![Current version][version]
 
-[<img src="https://raw.githubusercontent.com/thomasmauerer/hassio-addons/master/samba-backup/images/donate-paypal.svg" width=200/>](https://www.paypal.com/donate/?hosted_button_id=LP732BXWCKM3C)
+[<img src="https://raw.githubusercontent.com/pabloalcantara/hassio-addons-1/master/samba-backup/images/donate-paypal.svg" width=200/>](https://www.paypal.com/donate/?hosted_button_id=LP732BXWCKM3C)
 
 Create backups and store them on a Samba share.
 
@@ -14,7 +14,7 @@ This add-on lets you automatically create Home Assistant backups and store them 
 
 ## Installation
 
-1. Navigate in your Home Assistant frontend to **Settings** -> **Add-ons** -> **Add-on Store** and add this URL as an additional repository: `https://github.com/thomasmauerer/hassio-addons`
+1. Navigate in your Home Assistant frontend to **Settings** -> **Add-ons** -> **Add-on Store** and add this URL as an additional repository: `https://github.com/pabloalcantara/hassio-addons-1`
 2. Refresh your browser.
 3. Find the "Samba Backup" add-on and click the "INSTALL" button.
 4. Configure the add-on and click on "START".
