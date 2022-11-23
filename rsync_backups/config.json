@@ -1,6 +1,6 @@
 {
   "name": "RsyncD Backups",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "slug": "rsync_backups",
   "description": "Enable RsyncD with module Name rsync_backups",
   "url": "https://github.com/pabloalcantara/hassio-addons",
