@@ -1,5 +1,5 @@
 name: RsyncD Backups
-version: 1.1.20
+version: 1.1.21
 slug: rsync_backups
 description: Enable RsyncD with module Name rsync_backups
 url: https://github.com/pabloalcantara/hassio-addons/rsync_backups
@@ -24,6 +24,7 @@ map:
 options: 
   username: admin
   password: admin
+  hosts_allow: *
 
 ports:
   14678/tcp: 14678 
@@ -31,3 +32,4 @@ ports:
 schema:
   username: str
   password: str
+  hosts_allow: str
