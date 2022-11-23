@@ -11,5 +11,3 @@ COPY run.sh /
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
-Footer
-© 2022 GitHub, Inc.
