@@ -8,7 +8,7 @@
   "boot": "manual",
   "init": "false",
   "startup": "application",  
-  "ports": "14678/tcp:14678",
+  "ports": "14678:14678",
   "arch": [
     "aarch64",
     "amd64",
