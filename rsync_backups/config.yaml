@@ -26,4 +26,3 @@ ports:
 schema:
   username: str
   password: str
-  port: int
