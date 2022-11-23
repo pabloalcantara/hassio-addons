@@ -11,6 +11,7 @@ echo "[Info] Start rsync-backups"
 
 echo "[Info] Start rsync backups to $rsyncurl"
 echo "$username:$password" > /etc/rsyncd.secrets
-
+chmod 600 /etc/rsyncd.secrets
+cat /etc/rsyncd.secrets
 echo "[Info] rsync-backups Iniciado"
 rsync --daemon --no-detach --config=/etc/rsyncd.conf
