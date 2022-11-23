@@ -1,5 +1,5 @@
 ---
-name: Samba Backup
+name: Samba Backup - Pablo teste
 version: 5.2.0
 slug: samba_backup
 description: Create backups and store them on a Samba share
