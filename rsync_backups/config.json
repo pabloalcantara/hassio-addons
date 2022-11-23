@@ -22,6 +22,6 @@
   "schema": {
     "username": "str",
     "password": "str",
-    "port": "port"
+    "port": "int"
   }
 }
