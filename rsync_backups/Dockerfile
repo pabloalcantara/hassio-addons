@@ -8,6 +8,7 @@ RUN apk add --no-cache jq openssh-client sshpass rsync
 
 # Copy data for add-on
 COPY run.sh /
+COPY rsyncd.conf /etc
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
