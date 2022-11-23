@@ -6,6 +6,7 @@ echo "[Info] Starting Hass.io rsync-backups module backup!"
 CONFIG_PATH=/data/options.json
 username=$(jq --raw-output ".username" $CONFIG_PATH)
 password=$(jq --raw-output ".password" $CONFIG_PATH)
+port=$(jq --raw-output ".port" $CONFIG_PATH)
 
 echo "[Info] Start rsync-backups"
 
