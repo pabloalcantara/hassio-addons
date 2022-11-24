@@ -1,8 +1,8 @@
 name: RsyncD Backups
 version: 1.2.1
-slug: rsync_backups
-description: Enable RsyncD with module Name rsync_backups
-url: https://github.com/pabloalcantara/hassio-addons/rsync_backups
+slug: rsyncd
+description: Enable RsyncD with module Name rsyncd
+url: https://github.com/pabloalcantara/hassio-addons/rsyncd
 
 startup: once
 boot: manual
