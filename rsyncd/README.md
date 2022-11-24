@@ -31,7 +31,7 @@ RsyncD port, e.g. `14678`
 
 ## Use
 From the machine that you want to copy to/from, use:
-rsync -av --port=<port> <username>@<hassio server>::<map>/* .
+rsync -av --port=\<port\> <username>@<hassio server>::<map>/* .
 
 .e.g.: rsync -av --port=14678 admin@hassio.localhost::backup/* .
 
