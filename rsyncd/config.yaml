@@ -1,4 +1,4 @@
-name: RsyncD Backups
+name: RsyncD
 version: 1.2.1
 slug: rsyncd
 description: Enable RsyncD with module Name rsyncd
@@ -8,8 +8,6 @@ startup: once
 boot: manual
 init: false
 startup: services
-privileged:
-- SYS_ADMIN
 
 arch:
 - aarch64
