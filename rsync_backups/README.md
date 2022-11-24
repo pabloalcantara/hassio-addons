@@ -1,31 +1,17 @@
-# Rsync Backups add-on for Home Assistant
+# RsyncD for Home Assistant
 
-Transfers the Hass.io backups to a remote rsync server.
+Enable RsyncD for all default maps of Hassio (config, ssl, addons, backup, share and media)
 
 ## Configuration
 
-This section describes each of the add-on configuration options.
-
-Example add-on configuration:
-
 ```yaml
-server: rsync-server
-port: 22
-directory: ~/hassio-backups
-username: user
-password: password
-auto_purge: 0
-```
+Options:
+username: admin #Username to RsyncD
+password: admin #Password to RsyncD
+hosts_allow: * #IP/Network list than can access RsyncD
 
-or you can use also `!secret` eg.: (edit configuration in YAML):
-
-```yaml
-server: rsync-server
-port: 22
-directory: ~/hassio-backups
-username: user
-password: '!secret rsync_backups_password'
-auto_purge: 0
+Network:
+Port: 14678 #Port for RsyncD
 ```
 
 ### Option: `server` (required)
