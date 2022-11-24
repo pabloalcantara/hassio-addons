@@ -13,48 +13,18 @@ hosts_allow: * #IP/Network list than can access RsyncD
 Network:
 Port: 14678 #Port for RsyncD
 ```
+### Option: `username` (required)
 
-### Option: `server` (required)
-
-Server host or IP, e.g. `localhost`.
-
-### Option: `port` (required)
-
-Server ssh port, e.g. `22`.
-
-### Option: `directory` (required)
-
-Directoryon the server for backups, e.g. `~/hassio-backups`.
-
-### Option: `user` (required)
-
-Server ssh user, e.g. `root`.
+e.g. `admin`.
 
 ### Option: `password` (required)
 
-Server ssh password, e.g. `password`.
+RsyncD password, e.g. `password`.
 
-### Option: `auto_purge` (required)
+### Option: `hosts_allow` (required)
 
-The number of recent backups keep in Home Assistant, e.g. "5". Set to "0" to disable automatic deletion of backups.
+hosts_allow, e.g. `*` or `10.10.10.2,192.168.0.0/16`
 
-## How to use
+### Option: `port` (required)
 
-Run addon in the automation, example automation below:
-
-```yaml
-- alias: 'hassio_daily_backup'
-  trigger:
-    platform: 'time'
-    at: '3:00:00'
-  action:
-    - service: 'hassio.backup_full'
-      data_template:
-        name: "Automated Backup {{ now().strftime('%Y-%m-%d') }}"
-        password: !secret hassio_snapshot_password
-    # wait for snapshot done, then sync snapshots
-    - delay: '00:10:00'
-    - service: 'hassio.addon_start'
-      data:
-        addon: '2caa1d32_rsync_backups' # you can get the addon id from URL when you go to the addon info
-```
+RsyncD port, e.g. `14678`
