@@ -5,7 +5,7 @@ FROM alpine
 ENV LANG C.UTF-8
 
 RUN apk update
-RUN apk add --no-cache jq bash
+RUN apk add --no-cache jq bash curl
 #RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 RUN curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 # Copy data for add-on
