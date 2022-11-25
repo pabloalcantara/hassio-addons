@@ -1,7 +1,7 @@
 set -e
 
 echo "[Info] Starting Hass.io filebrowser!"
-echo "[Info] Start rsyncd"
+echo "[Info] Start filebrowser"
 
 CONFIG_PATH=/data/options.json
 username=$(jq --raw-output ".username" $CONFIG_PATH)
