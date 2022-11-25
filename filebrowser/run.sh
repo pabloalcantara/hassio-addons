@@ -13,4 +13,5 @@ hosts_allow=$(jq --raw-output ".hosts_allow" $CONFIG_PATH)
 #sed -i "s/auth users = username/auth users = $username/g" /etc/rsyncd.conf
 #sed -i "s/hosts allow = hosts_allow/auth users = $hosts_allow/g" /etc/rsyncd.conf
 echo "[Info] filebrowser Iniciado"
-pause
+#pause
+filebrowser -r /mnt
