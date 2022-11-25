@@ -12,6 +12,6 @@ RUN curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh |
 COPY run.sh /
 #COPY rsyncd.conf /etc
 RUN chmod a+x /run.sh
-EXPOSE 80
+EXPOSE 8080
 
 CMD /run.sh
