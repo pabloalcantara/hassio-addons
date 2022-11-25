@@ -4,8 +4,6 @@ slug: filebrowser
 description: Enable filebrowser to 
 url: https://github.com/pabloalcantara/hassio-addons/filebrowser
 
-image: filebrowser/filebrowser:latest
-
 startup: once
 boot: manual
 init: false
