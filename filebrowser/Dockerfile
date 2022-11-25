@@ -5,8 +5,9 @@ FROM alpine
 ENV LANG C.UTF-8
 
 RUN apk update
-RUN apk add --no-cache jq bash build-base curl file git gzip libc6-compat ncurses ruby ruby-dbm ruby-etc ruby-irb ruby-json
-RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+RUN apk add --no-cache jq bash
+#RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+RUN curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 # Copy data for add-on
 COPY run.sh /
 #COPY rsyncd.conf /etc
