@@ -30,7 +30,7 @@ options:
   hosts_allow: "*"
 
 ports:
-  9568/tcp: 80 
+  9568/tcp: 9568 
 
 schema:
   username: str
