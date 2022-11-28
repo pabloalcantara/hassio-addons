@@ -14,5 +14,6 @@ echo "[Info] Start filebrowser"
 #sed -i "s/hosts allow = hosts_allow/auth users = $hosts_allow/g" /etc/rsyncd.conf
 echo "[Info] filebrowser Iniciado"
 #pause
-mkdir -p /share/filebrowser/
-filebrowser -p 9568 -a 0.0.0.0 -d /share/filebrowser/database.db -r /mnt
+mkdir -p /addons/filebrowser/
+ln -s /addons /mnt/addons
+filebrowser -p 9568 -a 0.0.0.0 -d /addons/filebrowser/database.db -r /mnt
