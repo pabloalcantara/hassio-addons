@@ -1,7 +1,7 @@
 name: filebrowser
 version: 1.0.2
 slug: filebrowser
-description: Enable filebrowser to 
+description: Enable filebrowser
 url: https://github.com/pabloalcantara/hassio-addons/filebrowser
 
 startup: once
