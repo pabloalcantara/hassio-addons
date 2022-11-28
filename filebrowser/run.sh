@@ -3,17 +3,18 @@ set -e
 echo "[Info] Starting Hass.io filebrowser!"
 echo "[Info] Start filebrowser"
 
-#CONFIG_PATH=/data/options.json
-#username=$(jq --raw-output ".username" $CONFIG_PATH)
-#password=$(jq --raw-output ".password" $CONFIG_PATH)
-#hosts_allow=$(jq --raw-output ".hosts_allow" $CONFIG_PATH)
+CONFIG_PATH=/data/options.json
 
-#echo "$username:$password" > /etc/rsyncd.secrets
-#chmod 600 /etc/rsyncd.secrets
-#sed -i "s/auth users = username/auth users = $username/g" /etc/rsyncd.conf
-#sed -i "s/hosts allow = hosts_allow/auth users = $hosts_allow/g" /etc/rsyncd.conf
 echo "[Info] filebrowser Iniciado"
-#pause
-mkdir -p /addons/filebrowser/
+if [ ! -d "/addons/filebrowser" ] 
+then
+  mkdir -p /addons/filebrowser/
+fi
+
+ln -s /backup /mnt/backup
+ln -s /config /mnt/config
+ln -s /ssl /mnt/ssl
 ln -s /addons /mnt/addons
+ln -s /share /mnt/share
+ln -s /media /mnt/media
 filebrowser -p 9568 -a 0.0.0.0 -d /addons/filebrowser/database.db -r /mnt
