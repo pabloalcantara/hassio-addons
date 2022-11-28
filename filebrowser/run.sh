@@ -2,9 +2,6 @@ set -e
 
 echo "[Info] Starting Hass.io filebrowser!"
 echo "[Info] Start filebrowser"
-
-echo "[Info] filebrowser Iniciado"
-echo "[info] first run, login and password is "admin"
 if [ ! -d "/addons/filebrowser" ] 
 then
   mkdir -p /addons/filebrowser/
@@ -17,3 +14,6 @@ ln -s /addons /mnt/addons
 ln -s /share /mnt/share
 ln -s /media /mnt/media
 filebrowser -p 9568 -a 0.0.0.0 -d /addons/filebrowser/database.db -r /mnt
+
+echo "[Info] filebrowser Iniciado"
+echo "[info] first run, login and password is "admin"
