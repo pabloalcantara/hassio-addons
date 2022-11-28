@@ -3,9 +3,8 @@ set -e
 echo "[Info] Starting Hass.io filebrowser!"
 echo "[Info] Start filebrowser"
 
-CONFIG_PATH=/data/options.json
-
 echo "[Info] filebrowser Iniciado"
+echo "[info] first run, login and password is "admin"
 if [ ! -d "/addons/filebrowser" ] 
 then
   mkdir -p /addons/filebrowser/
