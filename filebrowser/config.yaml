@@ -1,5 +1,5 @@
 name: filebrowser
-version: 1.0.8
+version: 1.0.9
 slug: filebrowser
 description: Enable filebrowser
 url: https://github.com/pabloalcantara/hassio-addons/filebrowser
@@ -8,6 +8,10 @@ startup: once
 boot: manual
 init: false
 startup: application
+
+hassio_api: true
+hassio_role: manager
+homeassistant_api: true
 
 arch:
 - aarch64
@@ -24,14 +28,14 @@ map:
 - share:rw
 - media:rw
 
-host_network: true
-ports:
-  9568/tcp: 9568
-ports_description:
-  9568/tcp: Filebrowser Web Interface
+#host_network: true
+#ports:
+#  9568/tcp: 9568
+#ports_description:
+#  9568/tcp: Filebrowser Web Interface
   
-#ingress: true
-#ingress_port: 0
-#ingress_stream: true  
+ingress: true
+ingress_port: 9568
+ingress_stream: true  
 
 webui: http://[HOST]:[PORT:9568]
