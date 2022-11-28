@@ -24,15 +24,5 @@ map:
 - share:rw
 - media:rw
 
-options: 
-  username: admin
-  password: admin
-  hosts_allow: "*"
-
 ports:
-  9568/tcp: 9568 
-
-schema:
-  username: str
-  password: str
-  hosts_allow: str
+  9568/tcp: 9568
