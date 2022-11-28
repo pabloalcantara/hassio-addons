@@ -31,4 +31,4 @@ ingress: true
 ingress_port: 9568
 ingress_stream: true  
 
-webui: http://[HOST]:[PORT:9568]
+webui: http://[HOST]:[PORT:80]
