@@ -36,6 +36,7 @@ map:
   
 ingress: true
 ingress_port: 9568
-ingress_stream: false  
+ingress_stream: false
+ingress_entry: /filebrowser
 
 webui: http://[HOST]:[PORT:9568]
