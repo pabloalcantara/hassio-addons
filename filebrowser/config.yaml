@@ -26,3 +26,9 @@ map:
 
 ports:
   9568/tcp: 9568
+  
+ingress: true
+ingress_port: 0
+ingress_stream: true  
+
+webui: http://[HOST]:[PORT:9568]
