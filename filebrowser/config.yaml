@@ -7,7 +7,7 @@ url: https://github.com/pabloalcantara/hassio-addons/filebrowser
 startup: once
 boot: manual
 init: false
-startup: services
+startup: application
 
 arch:
 - aarch64
@@ -24,8 +24,9 @@ map:
 - share:rw
 - media:rw
 
+ports_description: {"9568/tcp": "Filebrowser Web Interface"},
 ports:
-  9568/tcp: 9568
+  9568/tcp: null
   
 ingress: true
 ingress_port: 9568
