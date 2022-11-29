@@ -1,5 +1,5 @@
 name: filebrowser
-version: 1.0.11
+version: 1.0.12
 slug: filebrowser
 description: Enable filebrowser
 url: https://github.com/pabloalcantara/hassio-addons/filebrowser
@@ -29,14 +29,14 @@ map:
 - media:rw
 
 #host_network: true
-#ports:
-#  9568/tcp: 9568
-#ports_description:
-#  9568/tcp: Filebrowser Web Interface
+ports:
+  9568/tcp: 9568
+ports_description:
+  9568/tcp: Filebrowser Web Interface
   
 ingress: true
 ingress_port: 9568
-ingress_stream: false
+ingress_stream: true
 ingress_entry: /filebrowser
 
-webui: http://[HOST]:[PORT:9568]
+#webui: http://[HOST]:[PORT:9568]
