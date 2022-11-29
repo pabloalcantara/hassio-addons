@@ -16,7 +16,9 @@ ln -s /media /mnt/media
 baseurl=echo $hostname |sed "s/-/_/"
 echo $hostname
 echo $baseurl
-filebrowser -p 9568 -a 0.0.0.0 -d /addons/filebrowser/database.db -r /mnt --baseurl "/$baseurl"
 
 echo "[Info] filebrowser Iniciado - $hostname - $baseurl"
 echo "[info] first run, login and password is "admin"
+
+filebrowser -p 9568 -a 0.0.0.0 -d /addons/filebrowser/database.db -r /mnt --baseurl "/$baseurl"
+
