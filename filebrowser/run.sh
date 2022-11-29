@@ -19,5 +19,5 @@ echo $baseurl
 
 echo "[Info] filebrowser Iniciado - $HOSTNAME - $baseurl"
 echo "[info] first run, login and password is 'admin'"
-
-filebrowser -p 9568 -a 0.0.0.0 -d /addons/filebrowser/database.db -r /mnt --baseurl "/$baseurl"
+sleep 1d
+#filebrowser -p 9568 -a 0.0.0.0 -d /addons/filebrowser/database.db -r /mnt --baseurl "/$baseurl"
