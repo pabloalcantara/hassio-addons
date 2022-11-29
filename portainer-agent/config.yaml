@@ -1,5 +1,5 @@
 name: portaineragent
-version: 1.0.2
+version: 1.0.3
 slug: portaineragent
 description: Enable portainer-agent
 url: https://github.com/pabloalcantara/hassio-addons/portainer-agent
@@ -10,12 +10,12 @@ boot: manual
 init: false
 startup: application
 
-docker_api: true
-hassio_api: true
+#docker_api: true
+#hassio_api: true
 #panel_icon: mdi:docker
 
-hassio_role: manager
-homeassistant_api: true
+#hassio_role: manager
+#homeassistant_api: true
 
 options: 
   AGENT_SECRET: 123456789
@@ -30,7 +30,7 @@ arch:
 - i386
 
 #host_network: true
-ports:
-  9001/tcp: 9001
-ports_description:
-  9001/tcp: Portainer Agent Port
+#ports:
+#  9001/tcp: 9001
+#ports_description:
+#  9001/tcp: Portainer Agent Port
