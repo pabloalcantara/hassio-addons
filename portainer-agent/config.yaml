@@ -17,10 +17,10 @@ startup: application
 #hassio_role: manager
 #homeassistant_api: true
 
-options: 
-  AGENT_SECRET: 123456789
-schema:
-  AGENT_SECRET: str 
+#options: 
+#  AGENT_SECRET: 123456789
+#schema:
+#  AGENT_SECRET: str 
 
 arch:
 - aarch64
