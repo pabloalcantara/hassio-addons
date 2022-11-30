@@ -3,7 +3,7 @@ version: 1.0.4
 slug: portaineragent
 description: Enable portainer-agent
 url: https://github.com/pabloalcantara/hassio-addons/portainer-agent
-image: portainer/agent:latest
+#image: portainer/agent:latest
 
 startup: once
 boot: manual
