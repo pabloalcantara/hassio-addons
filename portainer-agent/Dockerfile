@@ -10,4 +10,5 @@ RUN apk add --no-cache jq
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-CMD [ "sleep 365d" ]
+#CMD [ "sleep 365d" ]
+ENTRYPOINT ["tail", "-f", "/dev/null"]
