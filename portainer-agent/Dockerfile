@@ -14,5 +14,5 @@ RUN rm -rf /tmp/agent
 COPY run.sh /
 RUN chmod a+x /run.sh
 EXPOSE 9001
-CMD [ "/opt/agent/agent --port=9001 --secret=da9s7dhasfy82g3kDe" ]
+CMD [ "/run.sh" ]
 #ENTRYPOINT ["tail", "-f", "/dev/null"]
