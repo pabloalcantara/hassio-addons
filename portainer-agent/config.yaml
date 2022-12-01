@@ -10,17 +10,17 @@ boot: manual
 init: false
 startup: application
 
-#docker_api: true
-#hassio_api: true
-#panel_icon: mdi:docker
+docker_api: true
+hassio_api: true
+panel_icon: mdi:docker
 
 #hassio_role: manager
 #homeassistant_api: true
 
-#options: 
-#  AGENT_SECRET: 123456789
-#schema:
-#  AGENT_SECRET: str 
+options: 
+  AGENT_SECRET: da9s7dhasfy82g3kDe
+schema:
+  AGENT_SECRET: str 
 
 arch:
 - aarch64
@@ -30,7 +30,7 @@ arch:
 - i386
 
 #host_network: true
-#ports:
-#  9001/tcp: 9001
-#ports_description:
-#  9001/tcp: Portainer Agent Port
+ports:
+  9001/tcp: 9001
+ports_description:
+  9001/tcp: Portainer Agent Port
