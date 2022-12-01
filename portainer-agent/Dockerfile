@@ -6,7 +6,7 @@ ENV LANG C.UTF-8
 RUN apk update
 RUN apk add --no-cache jq bash git go curl
 RUN mkdir -p /root/go/bin
-RUN cd /temp
+RUN cd /tmp
 RUN git clone https://github.com/portainer/agent.git agent
 RUN cd agent	
 RUN ./dev.sh compile
