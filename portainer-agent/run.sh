@@ -15,4 +15,5 @@ echo "[Info] Start ortainer-agent"
 #sed -i "s/hosts allow = hosts_allow/auth users = $hosts_allow/g" /etc/rsyncd.conf
 echo "[Info] rsyncd Iniciado"
 ls -lh /opt/agent
+tail -f /dev/null
 /opt/agent/agent --port=9001 --secret=da9s7dhasfy82g3kDe
