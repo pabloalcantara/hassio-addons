@@ -10,12 +10,12 @@ RUN cd /tmp
 RUN git clone https://github.com/portainer/agent.git agent
 RUN cd agent	
 RUN ./dev.sh compile
-RUN mkdir -p /opt/agent
+RUN mkdir -p /opt/agentl
 RUN cp /tmp/agent/dist/* /opt/agent
 
 # Copy data for add-on
 COPY run.sh /
 RUN chmod a+x /run.sh
 EXPOSE 9001
-#CMD [ "sleep 365d" ]
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD [ "/opt/agent/agent --port 9001" ]
+#ENTRYPOINT ["tail", "-f", "/dev/null"]
