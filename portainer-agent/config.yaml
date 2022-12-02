@@ -14,12 +14,10 @@ hassio_api: true
 
 options: 
   agent_secret: xxxxxxxx
-  agent_secret_timeout: 72h  
   log_level: INFO
   
 schema:
-  agent_secret: password 
-  agent_secret_timeout: str
+  agent_secret: password
   LOG_LEVEL: list(INFO|DEBUG)
 
 arch:
