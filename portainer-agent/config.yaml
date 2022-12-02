@@ -45,7 +45,5 @@ arch:
 #host_network: true
 ports:
   9001/tcp: 9001
-  80/tcp: null
 ports_description:
   9001/tcp: Portainer Agent Port
-  80/tcp: Portainer Edge Port
