@@ -24,10 +24,6 @@ options:
   EDGE_INACTIVITY_TIMEOUT: 5m
   EDGE_INSECURE_POLL: 0
   
-  
-  
-  
-  
 schema:
   AGENT_SECRET: str 
   AGENT_SECRET_TIMEOUT: str
