@@ -1,5 +1,5 @@
 name: portaineragent
-version: 1.0.11
+version: 1.0.12
 slug: portaineragent
 description: Enable portainer-agent
 url: https://github.com/pabloalcantara/hassio-addons/portainer-agent
@@ -16,13 +16,11 @@ options:
   agent_secret: xxxxxxxx
   agent_secret_timeout: 72h  
   log_level: INFO
-  log_mode: PRETTY
   
 schema:
-  agent_secret: str 
+  agent_secret: password 
   agent_secret_timeout: str
-  log_level: str
-  log_mode: str
+  LOG_LEVEL: list(INFO|DEBUG)
 
 arch:
 - aarch64
