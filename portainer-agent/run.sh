@@ -10,4 +10,5 @@ LOG_LEVEL=$(jq --raw-output ".log_level" $CONFIG_PATH)
 
 echo "[Info] portainer-agent Iniciado"
 env
+cat $CONFIG_PATH
 /opt/agent/agent --port=9001 --secret=$AGENT_SECRET --log-level=$LOG_LEVEL
