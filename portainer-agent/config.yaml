@@ -14,26 +14,10 @@ hassio_api: true
 panel_icon: mdi:docker
 
 options: 
-  AGENT_SECRET: da9s7dhasfy82g3kDe
-  AGENT_SECRET_TIMEOUT: 72h
-  AGENT_CLUSTER_PROBE_TIMEOUT: 500ms
-  LOG_LEVEL: INFO
-  LOG_MODE: PRETTY
-  EDGE: 0
-  EDGE_KEY: EDGE_KEY
-  EDGE_INACTIVITY_TIMEOUT: 5m
-  EDGE_INSECURE_POLL: 0
+  AGENT_SECRET: aaaaaaaaa
   
 schema:
   AGENT_SECRET: str 
-  AGENT_SECRET_TIMEOUT: str
-  AGENT_CLUSTER_PROBE_TIMEOUT: str
-  LOG_LEVEL: str
-  LOG_MODE: srt
-  EDGE: str
-  EDGE_KEY: str
-  EDGE_INACTIVITY_TIMEOUT: str
-  EDGE_INSECURE_POLL: str
 
 arch:
 - aarch64
@@ -42,7 +26,6 @@ arch:
 - armv7
 - i386
 
-#host_network: true
 ports:
   9001/tcp: 9001
 ports_description:
