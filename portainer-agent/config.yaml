@@ -1,5 +1,5 @@
 name: portaineragent
-version: 1.0.13
+version: 1.0.14
 slug: portaineragent
 description: Enable portainer-agent
 url: https://github.com/pabloalcantara/hassio-addons/portainer-agent
