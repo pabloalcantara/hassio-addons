@@ -1,5 +1,5 @@
 name: portaineragent
-version: 1.0.9
+version: 1.0.10
 slug: portaineragent
 description: Enable portainer-agent
 url: https://github.com/pabloalcantara/hassio-addons/portainer-agent
@@ -11,13 +11,12 @@ startup: application
 
 docker_api: true
 hassio_api: true
-panel_icon: mdi:docker
 
 options: 
-  AGENT_SECRET: aaaaaaaaa
+  agent_secret: xxxxxxxx
   
 schema:
-  AGENT_SECRET: str 
+  agent_secret: str 
 
 arch:
 - aarch64
