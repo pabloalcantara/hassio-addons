@@ -16,4 +16,4 @@ echo "[Info] Start ortainer-agent"
 echo "[Info] rsyncd Iniciado"
 ls -lh /opt/agent
 tail -f /dev/null
-/opt/agent/agent --port=9001 --secret=da9s7dhasfy82g3kDe
+/opt/agent/agent --port=9001
