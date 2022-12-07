@@ -5,8 +5,8 @@ ENV LANG C.UTF-8
 
 RUN apk update; apk add --no-cache jq bash git go curl
 RUN git clone https://github.com/portainer/agent.git /tmp/agent
-RUN cd /tmp/agent ;./dev.sh compile; apk del git go
-RUN mkdir -p /opt/agent; cp /tmp/agent/dist/* /opt/agent; rm -rf /tmp/agent
+RUN cd /tmp/agent ;./dev.sh compile ;mkdir -p /opt/agent; cp /tmp/agent/dist/* /opt/agent;
+RUN rm -rf /tmp/agent ;go clean --cache; rm -rf /root/go ;apk del git go
 
 COPY run.sh /
 RUN chmod a+x /run.sh
