@@ -1,6 +1,6 @@
-name: portaineragent
-version: 1.0.19
-slug: portaineragent
+name: portainer-agent
+version: 1.0.20
+slug: portainer-agent
 description: Enable portainer-agent
 url: https://github.com/pabloalcantara/hassio-addons/portainer-agent
 
