@@ -1,5 +1,5 @@
 name: RsyncD
-version: 1.2.1
+version: 1.2.2
 slug: rsyncd
 description: Enable RsyncD with module Name rsyncd
 url: https://github.com/pabloalcantara/hassio-addons/rsyncd
@@ -31,7 +31,7 @@ options:
 
 ports:
   14678/tcp: 14678
-watchdog:tcp://[HOST]:[PORT:14678]
+watchdog: tcp://[HOST]:[PORT:14678]
 
 schema:
   username: str
