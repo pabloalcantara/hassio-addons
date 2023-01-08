@@ -30,7 +30,8 @@ options:
   hosts_allow: "*"
 
 ports:
-  14678/tcp: 14678 
+  14678/tcp: 14678
+watchdog:tcp://[HOST]:[PORT:14678]
 
 schema:
   username: str
